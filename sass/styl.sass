@@ -3,6 +3,7 @@ $fontSizeText: 14px
     width: $width
     height: $height
 
+@import "_normalize.scss"
 body
     font-family: "Mulish",sans-serif
     margin: 0
@@ -16,8 +17,12 @@ body
 .header-wraper
     display: flex
     justify-content: space-between
-    padding-top: 51px
-    padding-bottom: 45px
+    align-items: center
+    padding-top: 40px
+    padding-bottom: 40px
+    &__search
+        margin-right: auto
+        margin-left: 108px
 .login__foto
     +size(40px, 40px)
     border-radius: 50%
@@ -32,8 +37,7 @@ body
     font-size: $fontSizeText
     font-weight: 400
 .search
-    margin: 0
-    padding: 0
+
     position: relative
 .search__input
     +size(285px, 40px)

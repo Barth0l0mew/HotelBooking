@@ -6,5 +6,5 @@
         "../sass/_normalize.scss"
     ],
     "names": [],
-    "file": "styl.min.css"
+    "file": "styl.css"
 }

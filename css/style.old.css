@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.conteiner {
+  margin: 0 auto;
+  width: 1110px;
+}
+
+.header-wraper {
+  padding-top: 51px;
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.login__foto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 18px;
+}
+.login {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+.login__id {
+  font-size: 14px;
+}
+.search {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.search__input {
+  height: 40px;
+  width: 285px;
+  padding-left: 23px;
+  font-size: 12px;
+  border: none;
+  background-color: #f5fafe;
+  border-radius: 10px 0 0 10px;
+}
+.search__button {
+  position: absolute;
+
+  background-color: #ec1f46;
+  width: 65px;
+  height: 40px;
+  left: 285px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+}
+.lupa {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}
+
+.header-menu {
+  padding: 31px 0;
+  background-color: #0a223d;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.menu__link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}

@@ -341,25 +341,20 @@ template {
   display: none;
 }
 
+body {
+  font-family: "Mulish",sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Mulish", sans-serif;
-  color: #333;
-}
-
-.container {
+.conteiner {
   margin: 0 auto;
   width: 1110px;
-}
-
-img {
-  max-width: 100%;
 }
 
 .header-wraper {
@@ -381,163 +376,84 @@ img {
   margin-left: 108px;
 }
 
-.logo__bestTourPlan {
-  width: 177px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.search {
-  position: relative;
-  border-radius: 6px;
-  overflow: hidden;
+.login__foto {
+  width: 40px;
   height: 40px;
-  border: none;
-}
-
-.search__input {
-  width: 350px;
-  height: inherit;
-  padding-left: 23px;
-  padding-right: 75px;
-  font-size: 12px;
-  border: none;
-  background-color: #f5fafe;
-}
-
-.search__buttom {
-  width: 65px;
-  height: inherit;
-  background-color: #ec1f46;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-}
-
-.search__lupa {
-  width: 16px;
-  height: 16px;
+  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-right: 18px;
 }
 
 .login {
+  text-decoration: none;
+  color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
-}
-
-.login__foto {
-  width: 40px;
-  height: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
 }
 
 .login__id {
-  margin-left: 18px;
-  color: #333;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.menuBottom {
-  display: none;
+.search {
+  position: relative;
 }
 
-.menuBottom__icon {
+.search__input {
+  width: 285px;
+  height: 40px;
+  padding-left: 23px;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  background-color: #f5fafe;
+  border-radius: 10px 0 0 10px;
+}
+
+.search__button {
+  position: absolute;
+  width: 65px;
+  height: 40px;
+  background-color: #ec1f46;
+  left: 285px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+
+.lupa {
   width: 16px;
   height: 16px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.navbar {
+.header-menu {
+  padding: 31px 0;
   background-color: #0a223d;
-  padding-top: 31px;
-  padding-bottom: 31px;
 }
 
 .menu {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
+  list-style: none;
   padding: 0;
 }
 
-.menu__item {
+.menu__link {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
   text-transform: uppercase;
 }
-
-.menu__link {
-  text-decoration: none;
-  font-weight: bold;
-  color: #fff;
-  font-size: 16px;
-  line-height: 18px;
-}
-
-@media screen and (max-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .container {
-    max-width: 768px;
-  }
-  .header-wraper__search {
-    margin-left: auto;
-  }
-  .header-wraper {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .logo__bestTourPlan {
-    width: 135px;
-  }
-  .search__input {
-    width: 340px;
-  }
-  .navbar {
-    padding-top: 23px;
-    padding-bottom: 23px;
-  }
-  .menu__link {
-    font-size: 12px;
-    line-height: 15px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 320px;
-    width: 92%;
-  }
-  .logo__bestTourPlan {
-    width: 100px;
-  }
-  .search {
-    display: none;
-  }
-  .login {
-    display: none;
-  }
-  .menuBottom {
-    display: block;
-  }
-  .navbar {
-    display: none;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styl.css.map */

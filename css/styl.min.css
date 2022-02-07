@@ -1,81 +1,110 @@
-* {
-  box-sizing: border-box;
-}
 body {
+  font-family: "Mulish",sans-serif;
   margin: 0;
   padding: 0;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .conteiner {
   margin: 0 auto;
   width: 1110px;
 }
 
 .header-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 51px;
   padding-bottom: 45px;
-  display: flex;
-  justify-content: space-between;
 }
+
 .login__foto {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-right: 18px;
 }
+
 .login {
   text-decoration: none;
   color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .login__id {
   font-size: 14px;
+  font-weight: 400;
 }
+
 .search {
   margin: 0;
   padding: 0;
   position: relative;
 }
+
 .search__input {
-  height: 40px;
   width: 285px;
+  height: 40px;
   padding-left: 23px;
   font-size: 12px;
+  font-weight: 400;
   border: none;
   background-color: #f5fafe;
   border-radius: 10px 0 0 10px;
 }
+
 .search__button {
   position: absolute;
-
-  background-color: #ec1f46;
   width: 65px;
   height: 40px;
+  background-color: #ec1f46;
   left: 285px;
-  border-radius: 0 10px 10px 0;
   border: none;
+  border-radius: 0 10px 10px 0;
 }
+
 .lupa {
   width: 16px;
   height: 16px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header-menu {
   padding: 31px 0;
   background-color: #0a223d;
 }
+
 .menu {
-  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
   padding: 0;
 }
 
 .menu__link {
   font-size: 14px;
+  font-weight: 700;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
 }
+/*# sourceMappingURL=styl.min.css.map */

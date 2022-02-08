@@ -486,6 +486,109 @@ img {
   line-height: 18px;
 }
 
+.breadCrumbList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  line-height: 13px;
+  padding: 18px 0;
+  margin: 0;
+}
+
+.breadCrumbList__item:nth-last-child(n+2):after {
+  margin-right: 2px;
+  content: " / ";
+}
+
+.breadCrumbList__link {
+  text-decoration: none;
+  color: #0A223D;
+}
+
+.hotelBooking-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 23px 0;
+}
+
+.hotelBooking-info__wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotelBooking-info__offer {
+  margin-top: 4px;
+}
+
+.stars {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.stars__star {
+  width: 6px;
+  height: 6px;
+}
+
+.hotel-name {
+  margin: 5px 14px 0 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.offer {
+  font-size: 10px;
+  line-height: 13px;
+  background-color: #ec1f46;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 9px;
+  color: #fff;
+}
+
+.discription {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.rating {
+  width: 65px;
+  height: 45px;
+  background-color: #ec1f46;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+}
+
+.rating__text {
+  font-size: 8px;
+  line-height: 10px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.rating__count {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -538,6 +641,23 @@ img {
   }
   .navbar {
     display: none;
+  }
+  .hotelBooking-info__rating {
+    display: none;
+  }
+  .hotelBooking-info__offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .hotelBooking-info__wraper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .stars {
+    -ms-flex-preferred-size: content;
+        flex-basis: content;
   }
 }
 /*# sourceMappingURL=style.css.map */

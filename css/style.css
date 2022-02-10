@@ -637,10 +637,11 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  width: 119px;
 }
 
 .booking-button {
-  padding: 13px 83px;
+  padding: 13px 84px;
   margin-top: 17px;
   background-color: #ec1f46;
   border: 0;
@@ -788,6 +789,7 @@ img {
   .container {
     max-width: 320px;
     width: 92%;
+    min-width: 268px;
   }
   .logo__bestTourPlan {
     width: 100px;
@@ -820,6 +822,9 @@ img {
   .stars {
     -ms-flex-preferred-size: content;
         flex-basis: content;
+  }
+  .booking-button {
+    padding: 13px 68px;
   }
 }
 /*# sourceMappingURL=style.css.map */

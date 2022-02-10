@@ -628,6 +628,98 @@ img {
   height: 213px;
 }
 
+.booking {
+  padding: 26px;
+}
+
+.booking-button-text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.booking-button {
+  padding: 13px 83px;
+  margin-top: 17px;
+  background-color: #ec1f46;
+  border: 0;
+  border-radius: 6px;
+}
+
+.booking-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  font-family: Nunito;
+  height: 100px;
+}
+
+.booking-text-left, .booking-text-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking-text-right {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.prise {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.many {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.per {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.quick {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 8px;
+}
+
+.guest {
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.room {
+  margin-bottom: 25px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.phone {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;

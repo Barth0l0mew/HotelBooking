@@ -721,6 +721,11 @@ img {
   line-height: 25px;
 }
 
+.phone a {
+  color: #fff;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;

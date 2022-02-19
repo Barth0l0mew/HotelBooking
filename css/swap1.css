@@ -1,0 +1,77 @@
+.swap-wrap1 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.slaid-image1,
+.image1,
+.left1,
+.right1 {
+  width: 100%;
+  height: 100%;
+}
+
+.button-right1,
+.button-left1 {
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  opacity: 0.8;
+}
+
+.button-left1:hover,
+.button-right1:hover {
+  opacity: 1;
+}
+
+.button-left1 {
+  left: 0;
+}
+
+.button-right1 {
+  right: 0;
+}
+
+.slaid-image1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-animation-name: slaid;
+  animation-name: slaid;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes slaid1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slaid1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=swap.css.map */

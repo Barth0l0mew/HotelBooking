@@ -1,0 +1,59 @@
+.newsletter
+    border: 1px solid black
+    background-image: url(../img/coud.jpg)
+    background-position: center, center
+    // background-attachment: fixed
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba($backgroundNavbar, 0.8 )
+    &-wrapper
+        position: relative
+        display: flex
+        justify-content: space-around
+        align-items: center
+        padding: 108px 0
+    &-title
+        display: flex
+        flex-direction: column
+        color: $colorTextNavbar
+        font-family: Mulish
+        font-style: normal
+        font-weight: 300
+        font-size: 24px
+        line-height: 30px
+    &-subscribe
+        text-transform: uppercase
+        font-weight: 600
+        font-size: 36px
+        line-height: 45px
+.subscribe
+    position: relative
+    border-radius: 6px
+    overflow: hidden
+    height: 55px
+    border: none
+    &__input
+        width: 350px
+        height: inherit
+        padding-left: 23px
+        padding-right: 75px
+        font-size: 12px
+        border: none
+        background-color: $backgroundSearch
+    &__buttom
+        width: 65px
+        height: inherit
+        background-color: $backgroundButtom
+        position: absolute
+        top: 0
+        right: 0
+        border: none
+        cursor: pointer

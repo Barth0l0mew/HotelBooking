@@ -413,6 +413,7 @@ img {
   top: 0;
   right: 0;
   border: none;
+  cursor: pointer;
 }
 
 .search__lupa {
@@ -605,6 +606,7 @@ img {
           justify-content: space-between;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+  margin-bottom: 70px;
 }
 
 .swaper-slaider {
@@ -726,6 +728,184 @@ img {
   text-decoration: none;
 }
 
+.newsletter {
+  border: 1px solid black;
+  background-image: url(../img/coud.jpg);
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.newsletter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
+.newsletter-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 108px 0;
+}
+
+.newsletter-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.newsletter-subscribe {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.subscribe {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 55px;
+  border: none;
+}
+
+.subscribe__input {
+  width: 350px;
+  height: inherit;
+  padding-left: 23px;
+  padding-right: 75px;
+  font-size: 12px;
+  border: none;
+  background-color: #f5fafe;
+}
+
+.subscribe__buttom {
+  width: 65px;
+  height: inherit;
+  background-color: #ec1f46;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.swaper-slaider1 {
+  width: 1034px;
+}
+
+.about-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.image1-conte {
+  width: 540px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review {
+  padding: 40px 0 70px 0;
+}
+
+.review-about {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.review .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-foto {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.about-name {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+  margin-bottom: 10px;
+}
+
+.about-time {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  color: black;
+  margin-bottom: 35px;
+}
+
+.about-text {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 160%;
+  color: #333;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -788,6 +968,9 @@ img {
   .booking {
     margin-bottom: 30px;
   }
+  .swaper-slaider1 {
+    width: 659px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -830,6 +1013,61 @@ img {
   }
   .booking-button {
     padding: 13px 0;
+    width: 100%;
+  }
+  .newsletter-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .newsletter-title {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 37px;
+  }
+  .newsletter-subscribe {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .subscribe__input {
+    width: 280px;
+  }
+  .swaper-slaider1 {
+    width: 100%;
+    text-align: center;
+  }
+  .image1-conte {
+    width: 90%;
+  }
+  .review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .subscribe__input {
     width: 100%;
   }
 }

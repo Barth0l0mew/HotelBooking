@@ -1006,6 +1006,86 @@ img {
   line-height: 16px;
 }
 
+.footer {
+  background-color: #0a223d;
+  padding: 108px 0 50px 0;
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-logo {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-log1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Luckiest Guy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.footer-log2 {
+  color: #ec1f46;
+  text-transform: uppercase;
+  font-family: Luckiest Guy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.cat {
+  color: #fff;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+
+.cat-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cat-item-link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cat-link {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  opacity: 0.5;
+  text-decoration: none;
+  font-family: Mulish;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 23px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1191,6 +1271,16 @@ img {
     margin: auto;
     margin-bottom: 20px;
     width: 280px;
+  }
+  .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 

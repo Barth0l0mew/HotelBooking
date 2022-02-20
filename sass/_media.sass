@@ -46,10 +46,14 @@
 
         &-conte
     .other
+        &-activities
+            justify-content: space-between
+        &-card:not(:last-child)
+            margin-right: 0
         &-card
             margin-bottom: 20px
-        // border: 1px solid black
-            width: 455px
+            width: 340px
+
 @media screen and (max-width: 768px)
     .container
         max-width: 320px
@@ -109,6 +113,16 @@
         flex-direction: column
         align-items: center
         justify-content: center
+    .other
+        &activities
+            justify-content: center
+            align-items: center
+        &-card:not(:last-child)
+            margin-right: auto
+        &-card
+            margin: auto
+            margin-bottom: 20px
+            width: 280px
 @media screen and (max-width:576px)
     .subscribe
         &__input

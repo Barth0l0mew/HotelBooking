@@ -906,6 +906,106 @@ img {
   color: #333;
 }
 
+.other {
+  padding: 68px 0 0 90px;
+}
+
+.other-text {
+  text-transform: uppercase;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 57px;
+}
+
+.other-activities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.other-card:not(:last-child) {
+  margin-right: 29px;
+}
+
+.other-card {
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.other-card__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.other-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+}
+
+.other-card__text {
+  margin-left: 26px;
+  color: #fff;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  width: 145px;
+  margin-bottom: 18px;
+}
+
+.other-card__button {
+  border: 0;
+  background-color: #ec1f46;
+  color: #fff;
+  margin-bottom: 24px;
+  margin-left: 26px;
+  border-radius: 4px;
+  padding: 7px 0;
+  width: 100px;
+}
+
+.other-discription {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.button__text {
+  padding: 0;
+  margin: 0;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -970,6 +1070,9 @@ img {
   }
   .swaper-slaider1 {
     width: 659px;
+  }
+  .other-card {
+    margin-bottom: 20px;
   }
 }
 

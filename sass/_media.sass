@@ -9,6 +9,17 @@
         height: auto
     .swaper-slaider
         margin-bottom: 30px
+    .other
+        &-activities
+            justify-content: space-between
+        &-card:not(:last-child)
+            margin-right: 0
+        &-card
+            margin-bottom: 20px
+            width: 45%
+    .footer
+        &__input
+            flex-basis: 100%
 @media screen and (max-width:992px)
     .container
         max-width: 768px
@@ -53,6 +64,38 @@
         &-card
             margin-bottom: 20px
             width: 340px
+    .footer
+        &-logo
+            grid-row: 1/2
+            grid-column: 1/2
+            width: 100px
+            height: 140px
+            align-self: flex-start
+        &__social
+            &-network
+                grid-row: 1/2
+                grid-column: 2/5
+                align-self: center
+        &__categories
+            grid-column: 1/2
+            grid-row: 2/3
+        &__additional
+            grid-column: 2/4
+            grid-row: 2/3
+        &__legal
+            grid-column: 4/5
+            grid-row: 2/3
+
+        &__contact
+            &-detail
+                grid-column: 1/5
+                grid-row: 3
+            &-form
+                grid-column: 1/4
+                grid-row: 4
+                width: 540px
+        &__input
+            flex-basis: 250px
 
 @media screen and (max-width: 768px)
     .container
@@ -128,6 +171,50 @@
             flex-direction: column
         &-logo
             align-self: flex-start
+    .footer
+        &-logo
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+        &__legal
+            grid-row: 3
+            grid-column: 1
+        &__additional
+            grid-row: 4
+            grid-column: 1
+        &__categories
+            grid-row: 5
+            grid-column: 1
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1
+                width: 281px
+        &__input
+            flex-basis: 100%
+            font-family: Mulish
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+        &__textarea
+            font-family: Mulish
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+        &__button
+            font-family: Mulish
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
 @media screen and (max-width:576px)
     .subscribe
         &__input

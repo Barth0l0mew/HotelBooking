@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="css/swap1.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header header-wraper--fixed">
         <div class="container">
             <div class="header-wraper">
                 <a href=# class="logo">
                     <img src="img/logo.svg" alt="logo: Best Tour Plan" class="logo__bestTourPlan">
                 </a>
                 
-                <form action=# class="search header-wraper__search">
+                <form action=# class="search header-wraper__search header-wraper__search--hidden">
                     <input type="text" class="search__input" placeholder="Search location">
                     <button class="search__buttom">
                         <img src="img/lupa.svg" alt="lupa" class="search__lupa">
                     </button>
                 </form>
              
-                <a href=# class="login">
+                <a href=# class="login login--hidden">
                     <img src="img/foto.jpg" alt="login: avatar" class="login__foto">
                     <span class="login__id">Thomas</span>
                 </a>
@@ -43,6 +43,20 @@
         <div class="navbar">
             <div class="container">
                 <ul class="menu">
+                    <li class="menu__item menu__item--hidden">
+                        <a href=# class="login login--visible">
+                            <img src="img/foto.jpg" alt="login: avatar" class="login__foto">
+                            <span class="login__id">Thomas</span>
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--hiden">
+                        <form action=# class="search header-wraper__search header-wraper__search--visible">
+                            <input type="text" class="search__input" placeholder="Search location">
+                            <button class="search__buttom">
+                                <img src="img/lupa.svg" alt="lupa" class="search__lupa">
+                            </button>
+                        </form>
+                    </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">All Deals</a>
                     </li>
@@ -547,5 +561,6 @@
         </div>
     </footer>
     <script src="js/swap.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

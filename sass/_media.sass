@@ -102,16 +102,68 @@
         max-width: 320px
         width: 92%
         min-width: 268px
+    body
+        margin-top: 78px
+    .header-wraper--fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 10
+        background-color: #fff
+
+    .menu
+        flex-direction: column
+        align-items: center
+        &__item
+            margin-bottom: 20px
+
     .logo__bestTourPlan
         width: 100px
     .search
         display: none
-    .login
+    .login--hidden
         display: none
+    .login--visible
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .header-wraper
+        &__search
+            &--visible
+                display: block
+    .login
+        flex-direction: column
+    .login__id
+        font-family: Mulish
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 18px
+        color: #FFFFFF
+        display: block
+        margin: 0
+    .search
+        &__input
+            width: 243px
+            height: 40px
     .menuBottom
         display: block
     .navbar
         display: none
+        top: 78px
+        left: 0
+        right: 0
+        bottom: 0
+        position: fixed
+        &--visible
+            display: block
+    .menu
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 20px
     .hotelBooking-info
         &__rating
             display: none

@@ -487,6 +487,14 @@ img {
   line-height: 18px;
 }
 
+.login--visible {
+  display: none;
+}
+
+.header-wraper__search--visible {
+  display: none;
+}
+
 .breadCrumbList {
   list-style: none;
   display: -webkit-box;
@@ -1368,20 +1376,99 @@ img {
     width: 92%;
     min-width: 268px;
   }
+  body {
+    margin-top: 78px;
+  }
+  .header-wraper--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+  }
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu__item {
+    margin-bottom: 20px;
+  }
   .logo__bestTourPlan {
     width: 100px;
   }
   .search {
     display: none;
   }
-  .login {
+  .login--hidden {
     display: none;
+  }
+  .login--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-wraper__search--visible {
+    display: block;
+  }
+  .login {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .login__id {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    display: block;
+    margin: 0;
+  }
+  .search__input {
+    width: 243px;
+    height: 40px;
   }
   .menuBottom {
     display: block;
   }
   .navbar {
     display: none;
+    top: 78px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+  }
+  .navbar--visible {
+    display: block;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
   }
   .hotelBooking-info__rating {
     display: none;

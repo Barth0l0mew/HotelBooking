@@ -551,7 +551,7 @@
                     <form action="send.php" method="POST" class="footer__form">
                         <input name='name' type="text"   class="input footer__input" placeholder="Your Full Name*">
                         <input name='phone' type="text" class="input footer__input" placeholder="Phone Number*">
-                        <textarea name="message" id="" cols="30" rows="10" class="textarea footer__textarea" placeholder="Message*"></textarea>
+                        <textarea name='message' id="" cols="30" rows="10" class="textarea footer__textarea" placeholder="Message*"></textarea>
                         <button class="button footer__button" type="submit">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
@@ -560,6 +560,27 @@
             </div>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal__overlay">
+            
+        </div>
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close.svg" alt="close" class="close">
+            </a>
+            <h3 class="modal__title modal__title--mb30">BOOKING</h3>
+            <form action="send.php" method="POST" class="modal__form">
+                <input name='name' type="text" class="input modal__input" placeholder="Your Full Name*">
+                <input name='phone' type="text" class="input modal__input" placeholder="Phone Number*">
+                <input name='mail' type="text" class="input modal__input" placeholder="Mail Adress*">
+                <textarea name='message' id="" cols="30" rows="10" class="textarea modal__textarea"
+                    placeholder="Message*"></textarea>
+                <button class="button modal__button" type="submit">Send</button>
+                <span class="modal__info">* Required Fields</span>
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swap.js"></script>
     <script src="js/main.js"></script>
 </body>

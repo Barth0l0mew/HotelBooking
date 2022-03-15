@@ -548,11 +548,11 @@
                 </div>
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb30">Send us a message</h3>
-                    <form action="#" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*">
+                    <form action="send.php" method="post" class="footer__form">
+                        <input name='name' type="text"   class="input footer__input" placeholder="Your Full Name*">
+                        <input name='phone' type="text" class="input footer__input" placeholder="Phone Number*">
                         <textarea name="message" id="" cols="30" rows="10" class="textarea footer__textarea" placeholder="Message*"></textarea>
-                        <button class="button footer__button">Send</button>
+                        <button class="button footer__button" type="submit">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
                 </div>

@@ -1478,6 +1478,12 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .modal__dialog {
+    max-width: 320px;
+    width: 92%;
+    min-width: 268px;
+    padding: 33px 15px;
+  }
   .container {
     max-width: 320px;
     width: 92%;
